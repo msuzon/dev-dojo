@@ -5,6 +5,6 @@
     "tailwindcss": "^2.2.19"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/tailwind.css -o ./output/tailwind.css -w"
+    "build": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css -w"
   }
 }
