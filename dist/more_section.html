@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more section</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="font-roboto">
+    <!-- login form -->
+    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10 hidden">
+        <div class="w-full max-w-md border rounded-xl shadow-sm px-12 py-8 bg-white">
+            <form action="">
+                <h2 class="text-center text-5xl font-black uppercase mb-2">login</h2>
+                <p class="text-center text-gray-500 mb-5">Login to your accoutn below</p>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-indigo-600 text-white rounded-md px-4 py-3">
+                    <span class="text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Twitter</span>
+                </a>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-black text-white rounded-md px-4 py-3 mt-4">
+                    <span class="text-2xl">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Github</span>
+                </a>
+
+                <span class="text-center text-gray-500 uppercase mt-2 block">or, sign-in with email</span>
+
+                <div class="mt-2">
+                    <input type="text" placeholder="Email Address"
+                        class="w-full border border-gray-300 bg-gray-500 rounded-lg active:bg-indigo-600 focus:ring-2 focus:bg-indigo-600 px-4 py-2 ">
+
+                    <input type="text" placeholder="Password"
+                        class="w-full border border-gray-300 bg-gray-500 rounded-lg active:bg-indigo-600 focus:ring-2 focus:bg-indigo-600 px-4 py-2 mt-4">
+
+                    <button class="w-full bg-indigo-600 text-white rounded-lg capitalize py-3 mt-4">login</button>
+                </div>
+
+                <span class="text-center text-sm text-indigo-400 font-medium capitalize mt-4 block">forget your
+                    Password?</span>
+                <p class="text-indigo-400 text-center text-sm font-medium"> <span class="text-gray-400">New to
+                        Devdojo?</span> Sing up now
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <!-- login form end -->
+
+    <!-- sing up form -->
+    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10">
+        <div class="w-full max-w-md border rounded-xl shadow-sm px-12 py-8 bg-white">
+            <form action="">
+                <h2 class="text-center text-5xl font-black uppercase mb-2">singup</h2>
+                <p class="text-center text-gray-500 mb-5">Login to your accoutn below</p>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-indigo-600 text-white rounded-md px-4 py-3">
+                    <span class="text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Twitter</span>
+                </a>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-black text-white rounded-md px-4 py-3 mt-4">
+                    <span class="text-2xl">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Github</span>
+                </a>
+
+                <p class="text-indigo-400 text-center text-sm font-medium mt-4"> <span class="text-gray-400">New to
+                        Devdojo?</span> Sing up now
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <!-- sing up form end -->
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0">
+        <div class="w-full max-w-7xl mx-auto flex justify-between py-4 px-4">
+            <div class="flex items-center space-x-4">
+                <!-- Logo -->
+                <a href="#"
+                    class="w-10 h-10 rounded-full border p-2 bg-black flex justify-center items-center hover:ring-2 hover:ring-black transition">
+                    <img class="w-full h-full object-contain"
+                        src="https://media.discordapp.net/attachments/638411701766586395/910155561025298482/logo.png"
+                        alt="">
+                </a>
+                <!-- Logo end  -->
+                <!-- search -->
+                <div class="">
+                    <input
+                        class="w-24 h-8 text-sm text-gray-400 bg-gray-100 hover:bg-gray-200 rounded-lg px-2.5 focus:outline-none"
+                        type="text" placeholder="Search">
+                </div>
+                <!-- search end -->
+            </div>
+
+            <div class="space-x-2 flex">
+                <!-- Log in -->
+                <button
+                    class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium rounded-md capitalize px-4 ">login</button>
+                <!-- Log in end -->
+                <!-- sign up -->
+                <button
+                    class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium rounded-md capitalize px-4 ">signup</button>
+                <!-- sign up end -->
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- grid -->
+    <div class="w-full max-w-7xl mx-auto px-4 grid grid-cols-12 items-start gap-6 mt-6">
+        <!-- Left sidebar -->
+        <div class="xl:col-span-2 col-span-3 hidden lg:block">
+            <!-- side Nav -->
+            <div class="space-y-1 border-b border-gray-100 pb-5">
+                <!-- home -->
+                <a href="home.html" class="flex items-center space-x-3  hover:bg-gray-100 rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-indigo-400" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-500 font-medium">home</span>
+                </a>
+                <!-- home end -->
+                <!-- question -->
+                <a href="question.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">question</span>
+                </a>
+                <!-- question end -->
+                <!-- ebooks -->
+                <a href="ebooks.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">eBooks</span>
+                </a>
+                <!-- ebooks end -->
+                <!-- videos -->
+                <a href="vedio.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-700" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">videos</span>
+                </a>
+                <!-- videos end -->
+                <!-- courses -->
+                <a href="course.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">courses</span>
+                </a>
+                <!-- courses end -->
+                <!-- topics -->
+                <a href="topics.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20"
+                            fill="currentColor">
+                            <path
+                                d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM18 10a1 1 0 01-1 1h-1a1 1 0 110-2h1a1 1 0 011 1zM5.05 6.464A1 1 0 106.464 5.05l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM5 10a1 1 0 01-1 1H3a1 1 0 110-2h1a1 1 0 011 1zM8 16v-1h4v1a2 2 0 11-4 0zM12 14c.015-.34.208-.646.477-.859a4 4 0 10-4.954 0c.27.213.462.519.476.859h4.002z" />
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">topics</span>
+                </a>
+                <!-- topices end -->
+                <!-- more section -->
+                <a href="more_section.html"
+                    class="ml-5 pt-4 capitalize underline text-sm text-gray-600 font-medium block">more
+                    sections</a>
+                <!-- more section end -->
+            </div>
+            <!-- side Nav end -->
+
+            <!-- tool bar -->
+            <div class="space-y-1 border-b border-gray-100 mt-4 pb-5">
+                <p class="text-sm text-gray-800 font-medium capitalize pl-5 pb-4">pro tools</p>
+                <!-- tails -->
+                <a href="#" class="flex items-center space-x-3  hover:bg-indigo-50 duration-300 rounded-md px-4 py-2">
+                    <span>
+                        <svg class="w-6 h-6 mr-2 text-blue-500 fill-current" viewBox="0 0 39 15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.252 1.152C4.184 2.526.454 6.918.061 14.329c1.963-4.049 4.798-5.975 8.503-5.778 2.115.112 3.84 1.295 5.75 2.603 3.11 2.133 6.712 4.601 13.281 3.324 7.068-1.374 10.798-5.766 11.191-13.177-1.963 4.049-4.798 5.975-8.503 5.779-2.115-.113-3.84-1.296-5.75-2.604-3.11-2.133-6.712-4.601-13.281-3.324z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="capitalize text-base text-gray-500 font-medium">tails</span>
+                </a>
+                <!-- tails end -->
+                <!-- wave -->
+                <a href="#"
+                    class="flex items-center space-x-3 hover:bg-blue-50 transition duration-300 rounded-md px-4 py-2">
+                    <span class="text-indigo-500 text-xl">
+                        <i class="fab fa-shopware"></i>
+                    </span>
+                    <span class="capitalize text-base text-gray-600 font-medium">wave</span>
+                </a>
+                <!-- wave end -->
+                <!-- Saas -->
+                <a href="#"
+                    class="flex items-center space-x-3 hover:bg-pink-50 transition duration-300 rounded-md px-4 py-2">
+                    <span class="text-pink-400 text-xl">
+                        <i class="fab fa-sass"></i>
+                    </span>
+                    <span class="capitalize text-base text-gray-600 font-medium">saas adv.</span>
+                </a>
+                <!-- Saas end -->
+                <!-- Markdown -->
+                <a href="#" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span class="text-xl">
+                        <i class="fab fa-markdown"></i>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">Markdown</span>
+                </a>
+                <!-- Markdown end -->
+                <!-- Learn more -->
+                <a href="" class="ml-5 pt-4 capitalize underline text-sm text-gray-600 font-medium block">learn
+                    more</a>
+                <!-- Learn more end -->
+            </div>
+            <!-- tool bar end -->
+
+            <!-- upcoming course -->
+            <div class="mt-5">
+                <p class="text-sm text-gray-800 font-medium capitalize pl-5 mb-4">upcoming course</p>
+
+                <a href="#" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                    <span>
+                        <svg class="w-auto ml-0.5 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 202 120">
+                            <defs></defs>
+                            <g fill-rule="evenodd">
+                                <path
+                                    d="M0 0l69.245 120L96 73.633 53.51 0zM64 0l69.244 120L160 73.633 117.51 0zM127 0l37.5 65L202 0z">
+                                </path>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="capitalize text-sm text-gray-600 font-medium">wordsmith</span>
+                </a>
+
+            </div>
+            <!-- upcoming course end -->
+
+        </div>
+        <!-- Left sidebar end -->
+
+        <!-- content -->
+        <div class="col-span-12 xl:col-span-8 lg:col-span-9">
+
+            <div class="border border-gray-200 rounded-xl px-6 py-4 mb-4">
+                <h2 class="text-3xl text-gray-800 dark:text-gray-300 font-black capitalize">more</h2>
+                <span class="text-xs text-gray-600 dark:text-gray-200 capitalize">more section that you may want to
+                    visit</span>
+            </div>
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover rounded-xl" style="background-image: url('img/guides-bg2.jpg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black capitalize pb-2">guides</h3>
+                    <p class="text-sm text-white">Awesome guides to help you learn web development</p>
+                </div>
+            </div>
+            <!-- single card  end -->
+
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover rounded-xl mt-4"
+                style="background-image: url('img/ebook-bg-new.jpeg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black pb-2">eBooks</h3>
+                    <p class="text-sm text-white"> Login or Signup to Download a Book </p>
+                </div>
+            </div>
+            <!-- single card  end -->
+        </div>
+        <!-- content end -->
+
+        <!-- Right sidebar -->
+        <div class="col-span-2 hidden xl:block">
+
+            <!--  -->
+            <div class="shadow-lg border border-gray-100 rounded-lg  space-y-2 px-4 py-3">
+                <p class="capitalize text-sm font-medium mb-4">weekly top users</p>
+                <!-- chirag -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/chiragchhuchha.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">chirag</a>
+                        <span class="text-xs text-gray-600">50 poins /week</span>
+                    </div>
+                </div>
+                <!-- chirag end -->
+
+                <!-- dev dojo -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/devdojo2.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">dev dojo</a>
+                        <span class="text-xs text-gray-600">50 poins /week</span>
+                    </div>
+                </div>
+                <!-- dev dojo end -->
+                <!-- Bobby lliev -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/bobbyiliev.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">bobby lliev</a>
+                        <span class="text-xs text-gray-600">50 poins /week</span>
+                    </div>
+                </div>
+                <!-- Bobby lliev  end -->
+
+                <!-- Damian Demasi  -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/damiandemasi1.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">Damian demasi</a>
+                        <span class="text-xs text-gray-600">55 poins /week</span>
+                    </div>
+                </div>
+                <!-- Damian Demasi end -->
+
+                <!-- 29*2 -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/maxwelladanzounnon.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">29*2 </a>
+                        <span class="text-xs text-gray-600">40 poins /week</span>
+                    </div>
+                </div>
+                <!-- 29*2  end -->
+
+                <!-- HowToUbuntu -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/howtoubuntu.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">HowToUbuntu </a>
+                        <span class="text-xs text-gray-600">40 poins /week</span>
+                    </div>
+                </div>
+                <!-- HowToUbuntu  end -->
+
+                <!-- Suresh Ramani  -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/ramanisuresh411.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">suresh ramani </a>
+                        <span class="text-xs text-gray-600">40 poins /week</span>
+                    </div>
+                </div>
+                <!-- Suresh Ramani end -->
+
+                <!-- Olubisi Idris Ayinde -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/olanetsoft.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">Olubisi Idris Ayinde</a>
+                        <span class="text-xs text-gray-600">40 poins /week</span>
+                    </div>
+                </div>
+                <!-- Olubisi Idris Ayinde  end -->
+
+                <!-- karthikeyan -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/imkarthikeyans1.jpg" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">karthikeyan</a>
+                        <span class="text-xs text-gray-600">40 poins /week</span>
+                    </div>
+                </div>
+                <!-- karthikeyan end -->
+
+                <!-- tony lea -->
+                <div class="flex items-center space-x-2">
+                    <a href="#">
+                        <img class="w-10 h-10 object-cover rounded-full" src="img/tnylea.png" alt="">
+                    </a>
+                    <div class="mt-2">
+                        <a class="block capitalize text-xs font-medium" href="#">tony lea</a>
+                        <span class="text-xs text-gray-600">20 poins /week</span>
+                    </div>
+                </div>
+                <!-- tony lea end -->
+            </div>
+
+            <div class="shadow border border-gray-100 rounded-lg px-4 py-3 mt-4">
+                <p class="text-sm font-medium capitalize pb-4">latest questions</p>
+                <a class="block text-xs leading-5 pb-2 text-gray-500" href="#">Any new tails dashboard/ admin
+                    templates?</a>
+                <a class="block text-xs leading-5 pb-2 text-gray-500" href="#">Payment Processed (No Access)</a>
+                <a class="block text-xs leading-5 pb-2 text-gray-500" href="#">Wave won't load images when imported</a>
+                <a class="block text-xs leading-5 text-gray-500" href="#">Question for the pro Tools</a>
+            </div>
+
+        </div>
+        <!-- Right sidebar end -->
+    </div>
+    <!-- grid end -->
+
+    <!-- footer wrapper -->
+    <div class="border-t border-gray-200 mt-12">
+        <!-- footer -->
+
+        <footer class="w-full max-w-7xl mx-auto px-4 mt-10">
+            <div class="grid grid-cols-12 border-b border-gray-200 pb-8">
+                <div class="col-span-12 xl:col-span-4">
+                    <a href="#" class="flex items-center space-x-2 mb-6">
+                        <img class="w-8 h-8 object-cover rounded-full bg-black p-2  " src="img/logo.png" alt="">
+                        <h3 class="uppercase font-bold">devdojo</h3>
+                    </a>
+
+                    <p class="text-sm text-gray-400 mb-6">The Dev Community where we can all create, learn, and grow
+                        together.</p>
+                    <div class="space-x-5 mb-10 xl-mb-0">
+                        <a href="#" class="text-xl text-gray-400 hover:text-gray-500 transition"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-xl text-gray-400 hover:text-gray-500 transition"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-xl text-gray-400 hover:text-gray-500 transition"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-xl text-gray-400 hover:text-gray-500 transition"><i
+                                class="fab fa-github"></i></a>
+                        <a href="#" class="text-xl text-gray-400 hover:text-gray-500 transition"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <!-- products -->
+                <div class="hidden md:block col-span-3 xl:col-span-2 space-y-3">
+                    <p class="uppercase text-sm text-gray-500 tracking-widest font-medium mb-2">products</p>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">tails</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">wave</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">ninja
+                        training</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">devDojo
+                        pro</a>
+                </div>
+                <!-- products end -->
+                <!-- learn course -->
+                <div class="hidden md:block col-span-3 xl:col-span-2 space-y-2">
+                    <p class="uppercase text-sm text-gray-500 tracking-widest font-medium mb-2">learn</p>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">courses</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">episodes</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">tutorials</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">questions</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">training</a>
+                </div>
+                <!-- learn course end -->
+                <!-- more -->
+                <div class="hidden md:block col-span-3 xl:col-span-2 space-y-2">
+                    <p class="uppercase text-sm text-gray-500 tracking-widest font-medium mb-2">more</p>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">guides</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">scripts</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">books</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">points</a>
+                </div>
+                <!-- more end -->
+                <!-- other -->
+                <div class="hidden md:block col-span-3 xl:col-span-2 space-y-2">
+                    <p class="uppercase text-sm text-gray-500 tracking-widest font-medium mb-2">other</p>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">terms</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">help</a>
+                    <a href="#"
+                        class="block capitalize text-sm tracking-wider text-gray-400 hover:text-gray-500 transition">sponsorship</a>
+                </div>
+                <!-- other end -->
+            </div>
+            <p class="text-sm text-gray-400 text-center p-8">@ 2021 DevDoja LLC. All rights reserved.</p>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- footer wrapper end -->
+</body>
+
+</html>

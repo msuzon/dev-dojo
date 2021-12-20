@@ -18,7 +18,7 @@
 <body class="font-roboto">
     <!-- Navbar -->
     <nav class="bg-white shadow-sm sticky top-0">
-        <div class="w-full max-w-7xl mx-auto flex justify-between py-4 px-4">
+        <div class="w-full max-w-7xl mx-auto flex justify-between py-4 px-4 xl:px-0">
             <div class="flex items-center space-x-4">
                 <!-- Logo -->
                 <a href="#"
@@ -31,7 +31,7 @@
                 <!-- search -->
                 <div class="">
                     <input
-                        class="w-24 h-8 text-gray-400 bg-gray-100 hover:bg-gray-200 rounded-lg px-2.5 focus:outline-none"
+                        class="w-24 h-8 text-sm text-gray-400 bg-gray-100 hover:bg-gray-200 capitalize rounded-lg px-2.5 focus:outline-none"
                         type="text" placeholder="Search">
                 </div>
                 <!-- search end -->
@@ -40,11 +40,11 @@
             <div class="space-x-2 flex">
                 <!-- Log in -->
                 <button
-                    class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium rounded-md capitalize px-4 ">login</button>
+                    class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium capitalize rounded-md capitalize px-4 ">login</button>
                 <!-- Log in end -->
                 <!-- sign up -->
                 <button
-                    class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium rounded-md capitalize px-4 ">signup</button>
+                    class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium capitalize rounded-md capitalize px-4 ">signup</button>
                 <!-- sign up end -->
             </div>
         </div>
@@ -67,9 +67,9 @@
     <!-- banner end -->
 
     <!-- grid -->
-    <div class="w-full max-w-7xl mx-auto px-4 grid grid-cols-12 items-start gap-6 mt-6">
+    <div class="w-full max-w-7xl mx-auto grid grid-cols-12 items-start gap-6 mt-6">
         <!-- Left sidebar -->
-        <div class="xl:col-span-2 col-span-3 hidden lg:block">
+        <div class="xl:col-span-2 col-span-3 hidden lg:block lg:mx-4 xl:mx-0">
             <!-- side Nav -->
             <div class="space-y-1 border-b border-gray-100 pb-5">
                 <!-- home -->
@@ -85,7 +85,8 @@
                 </a>
                 <!-- home end -->
                 <!-- question -->
-                <a href="question.html" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                <a href="question.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-400" viewBox="0 0 20 20"
                             fill="currentColor">
@@ -98,7 +99,8 @@
                 </a>
                 <!-- question end -->
                 <!-- ebooks -->
-                <a href="ebooks.html" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                <a href="ebooks.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-400" fill="none"
                             viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +112,8 @@
                 </a>
                 <!-- ebooks end -->
                 <!-- videos -->
-                <a href="vedio.html" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                <a href="vedio.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-red-700" viewBox="0 0 20 20"
                             fill="currentColor">
@@ -122,7 +125,8 @@
                 </a>
                 <!-- videos end -->
                 <!-- courses -->
-                <a href="course.html" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                <a href="course.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" viewBox="0 0 20 20"
                             fill="currentColor">
@@ -134,7 +138,8 @@
                 </a>
                 <!-- courses end -->
                 <!-- topics -->
-                <a href="topics.html" class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
+                <a href="topics.html"
+                    class="flex items-center space-x-3 hover:bg-gray-100 transition rounded-md px-4 py-2">
                     <span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20"
                             fill="currentColor">
@@ -146,7 +151,8 @@
                 </a>
                 <!-- topices end -->
                 <!-- more section -->
-                <a href="#" class="ml-5 pt-4 capitalize underline text-sm text-gray-600 font-medium block">more
+                <a href="more_section.html"
+                    class="ml-5 pt-4 capitalize underline text-sm text-gray-600 font-medium block">more
                     sections</a>
                 <!-- more section end -->
             </div>
@@ -228,23 +234,24 @@
         <!-- content -->
         <div class="col-span-12 xl:col-span-8 lg:col-span-9">
             <!-- content nav -->
-            <div class="hidden border border-gray-100 divide-x-2 divide-gray-100 rounded-lg sm:flex overflow-hidden">
+            <div
+                class="hidden border border-gray-100 divide-x-2 divide-gray-100 rounded-lg sm:flex overflow-hidden mx-4 lg:mx-0 lg:mr-4 xl:mr-0">
                 <a href="#"
-                    class="text-center py-4 capitalize flex-grow text-xs font-medium text-gray-800 hover:bg-gray-50 relative">feed
+                    class="text-center py-4 capitalize flex-grow text-sm font-medium text-gray-800 hover:bg-gray-50 relative">feed
                     <span class="absolute w-full h-1 bg-blue-400 left-0 bottom-0 rounded-l-lg"></span></a>
                 <a href="#"
-                    class="text-center py-4 capitalize flex-grow text-xs font-medium text-gray-600 hover:bg-gray-50 relative">latest</a>
+                    class="text-center py-4 capitalize flex-grow text-sm font-medium text-gray-600 hover:bg-gray-50 relative">latest</a>
                 <a href="#"
-                    class="text-center py-4 capitalize flex-grow text-xs font-medium text-gray-600 hover:bg-gray-50 relative">featured</a>
+                    class="text-center py-4 capitalize flex-grow text-sm font-medium text-gray-600 hover:bg-gray-50 relative">featured</a>
                 <a href="#"
-                    class="text-center py-4 capitalize flex-grow text-xs font-medium text-gray-600 hover:bg-gray-50 relative">following</a>
+                    class="text-center py-4 capitalize flex-grow text-sm font-medium text-gray-600 hover:bg-gray-50 relative">following</a>
                 <a href="#"
-                    class="text-center py-4 capitalize flex-grow text-xs font-medium text-gray-600 hover:bg-gray-50 relative">bookmarks</a>
+                    class="text-center py-4 capitalize flex-grow text-sm font-medium text-gray-600 hover:bg-gray-50 relative">bookmarks</a>
             </div>
             <!-- content nav end -->
 
             <!-- mobile content nav -->
-            <div class="relative block sm:hidden">
+            <div class="relative block sm:hidden mx-4 sm:mx-0">
                 <span class="absolute right-3 top-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -253,13 +260,15 @@
                 </span>
                 <select class="w-full px-4 py-2 border border-gray-100 rounded appearance-none">
                     <option value="">Feed</option>
+                    <option value="">Latest</option>
                 </select>
             </div>
 
             <!-- mobile content nav end -->
 
             <!-- single card -->
-            <div class="mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4">
+            <div
+                class="mt-8 sm:mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4 mx-4 lg:mx-0 lg:mr-4 xl:mr-0">
                 <div class="flex jusity-between">
                     <div class="flex-grow md:pr-8 xl:pr-12">
                         <p class="mb-4 font-medium text-lg">Build Crud API with Node.js, Express, and MongoDB</p>
@@ -271,6 +280,7 @@
                         <img class="w-full rounded-lg" src="img/build-crud-api-with-node-express-mongodb.jpg" alt="">
                     </a>
                 </div>
+
                 <div class="flex justify-between mt-4">
                     <div class="flex items-center space-x-2">
                         <a href="#">
@@ -308,7 +318,8 @@
             </div>
             <!-- single card  end -->
             <!-- single card -->
-            <div class="mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4">
+            <div
+                class="mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4 mx-4 lg:mx-0 lg:mr-4 xl:mr-0">
                 <div class="flex jusity-between">
                     <div class="flex-grow md:pr-8 xl:pr-12">
                         <p class="mb-4 font-medium text-lg">Build Crud API with Node.js, Express, and MongoDB</p>
@@ -357,7 +368,8 @@
             </div>
             <!-- single card  end -->
             <!-- single card -->
-            <div class="mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4">
+            <div
+                class="mt-4 border border-gray-100 hover:shadow-lg transition duration-500 rounded-lg px-4 py-4 mx-4 lg:mx-0 lg:mr-4 xl:mr-0">
                 <div class="flex jusity-between">
                     <div class="flex-grow md:pr-8 xl:pr-12">
                         <p class="mb-4 font-medium text-lg">Build Crud API with Node.js, Express, and MongoDB</p>
