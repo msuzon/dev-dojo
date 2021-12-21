@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tail</title>
+        <link rel="stylesheet" href="tailwind.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+<body>
+    <!-- login form -->
+    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10 hidden">
+        <div class="w-full max-w-md border rounded-xl shadow-sm px-12 py-8 bg-white">
+            <form action="">
+                <h2 class="text-center text-5xl font-black uppercase mb-2">login</h2>
+                <p class="text-center text-gray-500 mb-5">Login to your accoutn below</p>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-indigo-600 text-white rounded-md px-4 py-3">
+                    <span class="text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Twitter</span>
+                </a>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-black text-white rounded-md px-4 py-3 mt-4">
+                    <span class="text-2xl">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Github</span>
+                </a>
+
+                <span class="text-center text-gray-500 uppercase mt-2 block">or, sign-in with email</span>
+
+                <div class="mt-2">
+                    <input type="text" placeholder="Email Address"
+                        class="w-full border border-gray-300 bg-gray-500 rounded-lg active:bg-indigo-600 focus:ring-2 focus:bg-indigo-600 px-4 py-2 ">
+
+                    <input type="text" placeholder="Password"
+                        class="w-full border border-gray-300 bg-gray-500 rounded-lg active:bg-indigo-600 focus:ring-2 focus:bg-indigo-600 px-4 py-2 mt-4">
+
+                    <button class="w-full bg-indigo-600 text-white rounded-lg capitalize py-3 mt-4">login</button>
+                </div>
+
+                <span class="text-center text-sm text-indigo-400 font-medium capitalize mt-4 block">forget your
+                    Password?</span>
+                <p class="text-indigo-400 text-center text-sm font-medium"> <span class="text-gray-400">New to
+                        Devdojo?</span> Sing up now
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <!-- login form end -->
+
+    <!-- sing up form -->
+    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10 hidden">
+        <div class="w-full max-w-md border rounded-xl shadow-sm px-12 py-8 bg-white">
+            <form action="">
+                <h2 class="text-center text-5xl font-black uppercase mb-2">singup</h2>
+                <p class="text-center text-gray-500 mb-5">Login to your accoutn below</p>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-indigo-600 text-white rounded-md px-4 py-3">
+                    <span class="text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Twitter</span>
+                </a>
+
+                <a href="#" class="flex gap-6 w-0-36 bg-black text-white rounded-md px-4 py-3 mt-4">
+                    <span class="text-2xl">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span class="pl-8 text-lg font-bold">Login with Github</span>
+                </a>
+
+                <p class="text-indigo-400 text-center text-xs font-medium mt-4"> <span class="text-gray-400">Already
+                        Have and Account?</span> Click here to Login
+                </p>
+
+            </form>
+        </div>
+    </div>
+    <!-- sing up form end -->
+   <!-- banner -->
+   <div class="w-full max-w-7xl mx-auto bg-gradient-to-r from-indigo-500 to-blue-500">
+        <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0">
+        <div class="flex justify-between py-4 px-4 xl:px-0">
+            <div class="flex items-center space-x-4">
+                <!-- Logo -->
+                <a href="#"
+                    class="w-10 h-10 rounded-full border p-2 bg-black flex justify-center items-center hover:ring-2 hover:ring-black transition">
+                    <img class="w-full h-full object-contain"
+                        src="https://media.discordapp.net/attachments/638411701766586395/910155561025298482/logo.png"
+                        alt="">
+                </a>
+                <!-- Logo end  -->
+                <!-- search -->
+                <div class="">
+                    <input
+                        class="w-24 h-8 text-sm text-gray-400 bg-gray-100 hover:bg-gray-200 capitalize rounded-lg px-2.5 focus:outline-none"
+                        type="text" placeholder="Search">
+                </div>
+                <!-- search end -->
+            </div>
+
+            <div class="space-x-2 flex">
+                <!-- Log in -->
+                <button
+                    class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium capitalize rounded-md capitalize px-4 ">login</button>
+                <!-- Log in end -->
+                <!-- sign up -->
+                <button
+                    class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium capitalize rounded-md capitalize px-4 ">signup</button>
+                <!-- sign up end -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbar end -->
+    <div class="grid grid-cols-2">
+        <div class="col-span-1 pt-10">
+            <div class="flex">
+                <span>
+                    <svg class="w-6 h-6 mr-2 text-blue-500 fill-current" viewBox="0 0 39 15"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.252 1.152C4.184 2.526.454 6.918.061 14.329c1.963-4.049 4.798-5.975 8.503-5.778 2.115.112 3.84 1.295 5.75 2.603 3.11 2.133 6.712 4.601 13.281 3.324 7.068-1.374 10.798-5.766 11.191-13.177-1.963 4.049-4.798 5.975-8.503 5.779-2.115-.113-3.84-1.296-5.75-2.604-3.11-2.133-6.712-4.601-13.281-3.324z"
+                            fill-rule="evenodd"></path>
+                    </svg>
+                </span>
+                <span>tails</span>
+            </div>
+        </div>
+
+        <div class="col-span-1">
+
+        </div>
+    </div>
+    </div>
+   <!-- banner end -->
+</body>
+</html>
