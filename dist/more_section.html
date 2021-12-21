@@ -61,7 +61,7 @@
     <!-- login form end -->
 
     <!-- sing up form -->
-    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10">
+    <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10 hidden">
         <div class="w-full max-w-md border rounded-xl shadow-sm px-12 py-8 bg-white">
             <form action="">
                 <h2 class="text-center text-5xl font-black uppercase mb-2">singup</h2>
@@ -81,8 +81,8 @@
                     <span class="pl-8 text-lg font-bold">Login with Github</span>
                 </a>
 
-                <p class="text-indigo-400 text-center text-sm font-medium mt-4"> <span class="text-gray-400">New to
-                        Devdojo?</span> Sing up now
+                <p class="text-indigo-400 text-center text-xs font-medium mt-4"> <span class="text-gray-400">Already
+                        Have and Account?</span> Click here to Login
                 </p>
 
             </form>
@@ -127,7 +127,7 @@
     <!-- Navbar end -->
 
     <!-- grid -->
-    <div class="w-full max-w-7xl mx-auto px-4 grid grid-cols-12 items-start gap-6 mt-6">
+    <div class="w-full max-w-7xl mx-auto sm:px-4 grid grid-cols-12 items-start gap-6 mt-6">
         <!-- Left sidebar -->
         <div class="xl:col-span-2 col-span-3 hidden lg:block">
             <!-- side Nav -->
@@ -293,28 +293,69 @@
         <!-- Left sidebar end -->
 
         <!-- content -->
-        <div class="col-span-12 xl:col-span-8 lg:col-span-9">
+        <div class="col-span-12 lg:col-span-9 xl:col-span-8">
 
-            <div class="border border-gray-200 rounded-xl px-6 py-4 mb-4">
+            <div class="border border-gray-200 sm:rounded-xl px-6 py-4 mb-4">
                 <h2 class="text-3xl text-gray-800 dark:text-gray-300 font-black capitalize">more</h2>
                 <span class="text-xs text-gray-600 dark:text-gray-200 capitalize">more section that you may want to
                     visit</span>
             </div>
             <!-- single card -->
-            <div href="#" class="bg-center bg-cover rounded-xl" style="background-image: url('img/guides-bg2.jpg');">
+            <a href="#" class="bg-center bg-cover sm:rounded-xl block"
+                style="background-image: url('img/guides-bg2.jpg');">
                 <div class="pl-8 py-12">
                     <h3 class="text-3xl text-white font-black capitalize pb-2">guides</h3>
                     <p class="text-sm text-white">Awesome guides to help you learn web development</p>
+                </div>
+            </a>
+            <!-- single card  end -->
+
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover sm:rounded-xl mt-4"
+                style="background-image: url('img/ebook-bg-new.jpeg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black pb-2">eBooks</h3>
+                    <p class="text-sm text-white"> Login or Signup to Download a Book </p>
                 </div>
             </div>
             <!-- single card  end -->
 
             <!-- single card -->
-            <div href="#" class="bg-center bg-cover rounded-xl mt-4"
-                style="background-image: url('img/ebook-bg-new.jpeg');">
+            <div href="#" class="bg-center bg-cover sm:rounded-xl mt-4"
+                style="background-image: url('img/fun-bg.jpg');">
                 <div class="pl-8 py-12">
-                    <h3 class="text-3xl text-white font-black pb-2">eBooks</h3>
-                    <p class="text-sm text-white"> Login or Signup to Download a Book </p>
+                    <h3 class="text-3xl text-white font-black pb-2">Dev Fun</h3>
+                    <p class="text-sm text-white"> Dev fun, Jokes and Humor </p>
+                </div>
+            </div>
+            <!-- single card  end -->
+
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover sm:rounded-xl mt-4"
+                style="background-image: url('img/sushi2.jpg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black capitalize pb-2">sushi point</h3>
+                    <p class="text-sm text-white"> Earn point, climb the leaderboard, and unlock features </p>
+                </div>
+            </div>
+            <!-- single card  end -->
+
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover sm:rounded-xl mt-4"
+                style="background-image: url('img/users-bg.jpg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black pb-2">Users</h3>
+                    <p class="text-sm text-white"> Some of the latest DevDojo Users </p>
+                </div>
+            </div>
+            <!-- single card  end -->
+
+            <!-- single card -->
+            <div href="#" class="bg-center bg-cover sm:rounded-xl mt-4"
+                style="background-image: url('img/scripts-bg.jpg');">
+                <div class="pl-8 py-12">
+                    <h3 class="text-3xl text-white font-black pb-2">PHP Scripts</h3>
+                    <p class="text-sm text-white"> Login or Signup to Download a Scripts </p>
                 </div>
             </div>
             <!-- single card  end -->
