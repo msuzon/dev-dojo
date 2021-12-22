@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tail</title>
-        <link rel="stylesheet" href="tailwind.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tail</title>
+    <link rel="stylesheet" href="tailwind.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
 <body>
     <!-- login form -->
     <div class="flex justify-center items-center fixed w-full h-full left-0 top-0 bg-black bg-opacity-70 z-10 hidden">
@@ -87,63 +89,148 @@
         </div>
     </div>
     <!-- sing up form end -->
-   <!-- banner -->
-   <div class="w-full max-w-7xl mx-auto bg-gradient-to-r from-indigo-500 to-blue-500">
+    <!-- banner -->
+    <div class="w-full bg-gradient-to-r from-indigo-500 to-blue-500">
         <!-- Navbar -->
-    <nav class="bg-white shadow-sm sticky top-0">
-        <div class="flex justify-between py-4 px-4 xl:px-0">
-            <div class="flex items-center space-x-4">
-                <!-- Logo -->
-                <a href="#"
-                    class="w-10 h-10 rounded-full border p-2 bg-black flex justify-center items-center hover:ring-2 hover:ring-black transition">
-                    <img class="w-full h-full object-contain"
-                        src="https://media.discordapp.net/attachments/638411701766586395/910155561025298482/logo.png"
-                        alt="">
-                </a>
-                <!-- Logo end  -->
-                <!-- search -->
-                <div class="">
-                    <input
-                        class="w-24 h-8 text-sm text-gray-400 bg-gray-100 hover:bg-gray-200 capitalize rounded-lg px-2.5 focus:outline-none"
-                        type="text" placeholder="Search">
+        <nav class="bg-gradient-to-r from-indigo-500 to-blue-500shadow-sm sticky top-0">
+            <div class="w-full max-w-7xl mx-auto flex justify-between py-4 px-4 xl:px-0">
+                <div class="flex items-center space-x-4">
+                    <!-- Logo -->
+                    <a href="#"
+                        class="w-10 h-10 rounded-full border p-2 bg-black flex justify-center items-center hover:ring-2 hover:ring-black transition">
+                        <img class="w-full h-full object-contain"
+                            src="https://media.discordapp.net/attachments/638411701766586395/910155561025298482/logo.png"
+                            alt="">
+                    </a>
+                    <!-- Logo end  -->
+                    <!-- search -->
+                    <div class="">
+                        <input
+                            class="w-24 h-8 text-sm text-gray-400 bg-gray-100 hover:bg-gray-200 capitalize rounded-lg px-2.5 focus:outline-none"
+                            type="text" placeholder="Search">
+                    </div>
+                    <!-- search end -->
                 </div>
-                <!-- search end -->
+
+                <div class="space-x-2 flex">
+                    <!-- Log in -->
+                    <button
+                        class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium rounded-md capitalize px-4 ">login</button>
+                    <!-- Log in end -->
+                    <!-- sign up -->
+                    <button
+                        class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium rounded-md capitalize px-4 ">signup</button>
+                    <!-- sign up end -->
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar end -->
+        <div class="w-full max-w-7xl mx-auto grid grid-cols-2 z-10 px-4 xl:px-0">
+            <div class="col-span-2 sm:col-span-1 pt-20 pb-40">
+                <div class="flex gap-5">
+                    <span class="flex justify-center items-center bg-white rounded-xl px-2 py-1 ">
+                        <svg class="w-6 h-6 text-blue-500 fill-current" viewBox="0 0 39 15"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.252 1.152C4.184 2.526.454 6.918.061 14.329c1.963-4.049 4.798-5.975 8.503-5.778 2.115.112 3.84 1.295 5.75 2.603 3.11 2.133 6.712 4.601 13.281 3.324 7.068-1.374 10.798-5.766 11.191-13.177-1.963 4.049-4.798 5.975-8.503 5.779-2.115-.113-3.84-1.296-5.75-2.604-3.11-2.133-6.712-4.601-13.281-3.324z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </span>
+                    <span class="text-4xl text-white font-bold">tails</span>
+                </div>
+                <h1 class="text-4xl sm:text-5xl  lg:text-6xl text-white capitalize font-bold mt-8">tailwindCSS <br class="hidden sm:block">page creator</h1>
+                <p class="w-full max-w-lg text-gray-300 text-lg mt-5">Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Consectetur quaerat a, atque velit magni autem sed consequuntur deserunt sapiente
+                    dignissimos!</p>
+
+                <div class="flex sm:block lg:flex gap-5 mt-8">
+                    <a href="#"
+                        class="w-64 bg-white text-indigo-600 font-medium capitalize rounded-full px-8 py-3 block">lunch
+                        the app</a>
+                    <a href="#" class="block sm:mt-4 lg:mt-0">
+                        <img src="img/featured.svg" alt="">
+                    </a>
+                </div>
             </div>
 
-            <div class="space-x-2 flex">
-                <!-- Log in -->
-                <button
-                    class="h-8 bg-gray-100 text-gray-600 hover:bg-gray-200 text-xs font-medium capitalize rounded-md capitalize px-4 ">login</button>
-                <!-- Log in end -->
-                <!-- sign up -->
-                <button
-                    class="h-8 bg-gray-900 text-gray-100 hover:bg-gray-800 text-xs font-medium capitalize rounded-md capitalize px-4 ">signup</button>
-                <!-- sign up end -->
+            <div class="col-span-2 sm:col-span-1 scale-75s">
+
             </div>
         </div>
-    </nav>
+        <!-- banner end -->
+        <div class="bg-blue-800 px-4 xl:px-0">
+            <div class="w-full flex justify-between max-w-7xl mx-auto py-4">
+                <h2 class="text-white font-semibold">Are you ready to start creating?</h2>
+                <a href="#" class="block text-white font-semibold uppercase underline">lunch the app</a>
+            </div>
+        </div>
+        <!-- vedio -->
+        <div class="bg-black text-white">
+            <div class="w-full max-w-7xl mx-auto py-10">
+                <h2 class="text-center text-indigo-600 uppercase">want to learn more and maybe get pumped</h2>
+                <h3 class="text-center text-5xl sm:text-6xl font-semibold capitalize mt-4">watch this video</h3>
 
-    <!-- Navbar end -->
-    <div class="grid grid-cols-2">
-        <div class="col-span-1 pt-10">
-            <div class="flex">
-                <span>
-                    <svg class="w-6 h-6 mr-2 text-blue-500 fill-current" viewBox="0 0 39 15"
+                <div
+                    class="border-2 border-gray-800 flex flex-col justify-center items-center rounded-lg py-36 md:py-64 mt-8 mx-4 lg:mx-0">
+                    <a href="#" class="text-7xl text-white hover:text-indigo-700 transition"><i
+                            class="fab fa-youtube"></i></a>
+
+                    <span class="text-4xl font-semibold mt-2">tails</span>
+                </div>
+
+                <a href="#"
+                    class="flex justify-center  mx-auto w-60 text-xl text-indigo-600 bg-white font-semibold capitalize rounded-full py-3 mt-4">lunch
+                    the app</a>
+            </div>
+        </div>
+        <!-- vedio end -->
+
+        <div class="bg-bottom bg-cover px-4" style="background-image: url('img/helping.jpeg');">
+            <div class="lg:flex justify-between items-center w-full max-w-7xl mx-auto py-28">
+                <div class="w-full max-w-3xl md:mx-auto lg:mx-0 text-left sm:text-center lg:text-left">
+                    <h2 class="text-4xl md:text-5xl lg:text-5xl text-white font-semibold capitalize mb-2">helping you look pretty</h2>
+                    <p class="text-sm lg:text-lg text-white">Nobody likes an ugly site, with these component we'll help you look
+                        pretty</p>
+                </div>
+                <div class="flex justify-center mt-6 lg:mt-0">
+                    <a href="#"
+                        class="w-full sm:w-64 bg-indigo-600 hover:bg-indigo-700 transition text-white font-semibold uppercase rounded-lg sm:rounded-full px-10 py-5 inline-block">lunch
+                        the app</a>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="bg-black pt-10 pb-20 px-4">
+            <div class="sm:flex justify-between items-center w-full max-w-7xl mx-auto">
+                <span class="flex justify-center items-center mx-auto sm:mx-0 w-12 h-12 bg-indigo-600 rounded-lg mb-6 sm:mb-0">
+                    <svg class="w-6 h-6  text-white fill-current" viewBox="0 0 39 15"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M11.252 1.152C4.184 2.526.454 6.918.061 14.329c1.963-4.049 4.798-5.975 8.503-5.778 2.115.112 3.84 1.295 5.75 2.603 3.11 2.133 6.712 4.601 13.281 3.324 7.068-1.374 10.798-5.766 11.191-13.177-1.963 4.049-4.798 5.975-8.503 5.779-2.115-.113-3.84-1.296-5.75-2.604-3.11-2.133-6.712-4.601-13.281-3.324z"
                             fill-rule="evenodd"></path>
                     </svg>
                 </span>
-                <span>tails</span>
+                <div class="text-center text-gray-600  space-x-8">
+                    <a href="#" class="hover:text-gray-400 transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-gray-400 transition"> <i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-gray-400 transition"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        <div class="w-full max-w-7xl mx-auto flex flex-col-reverse sm:flex-row justify-between items-center mt-6">
+                <p class="text-sm text-gray-600 mt-2 sm:mt-0">Crafted with <span class="text-white">Tail.</span>
+                Built with love by our team</p>
+            <div class="space-x-6">
+                <a href="#" class="text-sm text-gray-600 hover:text-gray-400 transition capitalize">home</a>
+                <a href="#"
+                    class="text-sm text-gray-600 hover:text-gray-400 transition capitalize">changelog</a>
+                <a href="#"
+                    class="text-sm text-gray-600 hover:text-gray-400 transition capitalize">affiliates</a>
             </div>
         </div>
-
-        <div class="col-span-1">
-
         </div>
-    </div>
-    </div>
-   <!-- banner end -->
+        <!-- footer end -->
 </body>
+
 </html>
